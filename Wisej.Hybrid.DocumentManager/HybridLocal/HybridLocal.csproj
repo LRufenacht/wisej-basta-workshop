@@ -54,11 +54,8 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.*" />
     <PackageReference Include="Wisej-3-MaterialDesign" Version="3.5.*-*" />
     <PackageReference Include="Wisej-3-Hybrid" Version="3.5.*-*" />
-    <PackageReference Include="Wisej-3-Tesseract" Version="3.5.5-preview.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="F:\ITG\Wisej\Extensions\Hybrid\3.5\DocumentScanner\Wisej.Hybrid.DocumentScanner\Wisej.Hybrid.DocumentScanner.csproj" />
+	<PackageReference Include="Wisej-3-Tesseract" Version="3.5.*-*" />
+	<PackageReference Include="Wisej-3-Hybrid-DocumentScanner" Version="3.5.*-*" />
   </ItemGroup>
 
 </Project>

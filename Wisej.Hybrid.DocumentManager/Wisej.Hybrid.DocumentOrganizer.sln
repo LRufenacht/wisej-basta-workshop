@@ -7,12 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridClient", "HybridClien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridLocal", "HybridLocal\HybridLocal.csproj", "{FF09C50C-A322-4A8C-960B-A242999870E5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.Hybrid.DocumentScanner.Native", "F:\ITG\Wisej\Extensions\Hybrid\3.5\DocumentScanner\Wisej.Hybrid.DocumentScanner.Native\Wisej.Hybrid.DocumentScanner.Native.csproj", "{DBF58DDE-171F-484D-A4CC-AFCC26EE52CF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.Hybrid.DocumentScanner", "F:\ITG\Wisej\Extensions\Hybrid\3.5\DocumentScanner\Wisej.Hybrid.DocumentScanner\Wisej.Hybrid.DocumentScanner.csproj", "{A1084B52-5907-4C82-8DF3-5D33F75274E3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.Hybrid.CameraPreview.Native", "F:\ITG\Wisej\Extensions\Hybrid\3.5\CameraPreview\Wisej.Hybrid.Native.CameraPreview\Wisej.Hybrid.CameraPreview.Native.csproj", "{C9A961C7-0776-46F4-9880-C54B4E209D30}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,27 +23,11 @@ Global
 		{FF09C50C-A322-4A8C-960B-A242999870E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF09C50C-A322-4A8C-960B-A242999870E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF09C50C-A322-4A8C-960B-A242999870E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBF58DDE-171F-484D-A4CC-AFCC26EE52CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBF58DDE-171F-484D-A4CC-AFCC26EE52CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBF58DDE-171F-484D-A4CC-AFCC26EE52CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBF58DDE-171F-484D-A4CC-AFCC26EE52CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1084B52-5907-4C82-8DF3-5D33F75274E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1084B52-5907-4C82-8DF3-5D33F75274E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1084B52-5907-4C82-8DF3-5D33F75274E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1084B52-5907-4C82-8DF3-5D33F75274E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9A961C7-0776-46F4-9880-C54B4E209D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9A961C7-0776-46F4-9880-C54B4E209D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9A961C7-0776-46F4-9880-C54B4E209D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9A961C7-0776-46F4-9880-C54B4E209D30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19DE47F1-C236-4EB1-940B-D22998756367}
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		F:\ITG\Wisej\Extensions\Hybrid\3.5\DocumentScanner\Wisej.Hybrid.DocumentScanner.Shared\Wisej.Hybrid.DocumentScanner.Shared.projitems*{a1084b52-5907-4c82-8df3-5d33f75274e3}*SharedItemsImports = 5
-		F:\ITG\Wisej\Extensions\Hybrid\3.5\DocumentScanner\Wisej.Hybrid.DocumentScanner.Shared\Wisej.Hybrid.DocumentScanner.Shared.projitems*{dbf58dde-171f-484d-a4cc-afcc26ee52cf}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
