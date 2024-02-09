@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34518.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridClient", "HybridClient\HybridClient.csproj", "{4D929CF7-987A-4319-BFCF-D3A9C150D429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridClient", "HybridClient\HybridClient.csproj", "{4D929CF7-987A-4319-BFCF-D3A9C150D429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridLocal", "HybridLocal\HybridLocal.csproj", "{FBBCEE93-8FED-4932-A8D5-078EA509DEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridLocal", "HybridLocal\HybridLocal.csproj", "{FBBCEE93-8FED-4932-A8D5-078EA509DEE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridRemote", "HybridRemote\HybridRemote.csproj", "{ACF17B87-FEB6-4670-8457-08C482004D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{FBBCEE93-8FED-4932-A8D5-078EA509DEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBBCEE93-8FED-4932-A8D5-078EA509DEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBBCEE93-8FED-4932-A8D5-078EA509DEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF17B87-FEB6-4670-8457-08C482004D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF17B87-FEB6-4670-8457-08C482004D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF17B87-FEB6-4670-8457-08C482004D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF17B87-FEB6-4670-8457-08C482004D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

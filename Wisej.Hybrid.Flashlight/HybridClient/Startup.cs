@@ -18,7 +18,7 @@ namespace HybridClient
 				})
 
 				 // Uncomment and replace with Offline startup Type to use embedded web server.
-				 .UseWisejOffline<OfflineStartup>()
+				.UseWisejOffline<OfflineStartup>()
 
 				.UseWisejHybrid((config) =>
 				{
@@ -26,7 +26,7 @@ namespace HybridClient
 					// config.OfflineTimeout = 5000;
 
 					// Provide the startup URL for the Hybrid WebView.
-					config.StartupUrl = "http://localhost:5000";
+					config.StartupUrl = "http://localhost:5000/";
 				});
 
 #if DEBUG
