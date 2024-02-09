@@ -31,11 +31,11 @@
 			this.components = new System.ComponentModel.Container();
 			this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
 			this.uploadImage = new Wisej.Web.Upload();
-			this.pictureBoxPreview = new Wisej.Web.PictureBox();
-			this.textBoxImageText = new Wisej.Web.TextBox();
 			this.buttonScan = new Wisej.Web.Button();
-			this.tesseract1 = new Wisej.Ext.Tesseract.Tesseract(this.components);
+			this.pictureBoxPreview = new Wisej.Web.PictureBox();
 			this.buttonSave = new Wisej.Web.Button();
+			this.tesseract1 = new Wisej.Ext.Tesseract.Tesseract(this.components);
+			this.tagTextBoxImageText = new Wisej.Web.TagTextBox();
 			this.flexLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
 			this.SuspendLayout();
@@ -45,7 +45,7 @@
 			this.flexLayoutPanel1.Controls.Add(this.uploadImage);
 			this.flexLayoutPanel1.Controls.Add(this.buttonScan);
 			this.flexLayoutPanel1.Controls.Add(this.pictureBoxPreview);
-			this.flexLayoutPanel1.Controls.Add(this.textBoxImageText);
+			this.flexLayoutPanel1.Controls.Add(this.tagTextBoxImageText);
 			this.flexLayoutPanel1.Controls.Add(this.buttonSave);
 			this.flexLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
 			this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
@@ -64,22 +64,6 @@
 			this.uploadImage.Text = "Select from Gallery";
 			this.uploadImage.Uploaded += new Wisej.Web.UploadedEventHandler(this.uploadImage_Uploaded);
 			// 
-			// pictureBoxPreview
-			// 
-			this.pictureBoxPreview.Location = new System.Drawing.Point(3, 109);
-			this.pictureBoxPreview.Name = "pictureBoxPreview";
-			this.pictureBoxPreview.Size = new System.Drawing.Size(362, 206);
-			this.pictureBoxPreview.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
-			// 
-			// textBoxImageText
-			// 
-			this.textBoxImageText.Location = new System.Drawing.Point(3, 331);
-			this.textBoxImageText.Multiline = true;
-			this.textBoxImageText.Name = "textBoxImageText";
-			this.textBoxImageText.Size = new System.Drawing.Size(362, 74);
-			this.textBoxImageText.TabIndex = 2;
-			this.textBoxImageText.Watermark = "Image Text";
-			// 
 			// buttonScan
 			// 
 			this.buttonScan.Location = new System.Drawing.Point(3, 56);
@@ -89,14 +73,29 @@
 			this.buttonScan.Text = "Scan Document";
 			this.buttonScan.Click += new System.EventHandler(this.buttonScan_Click);
 			// 
+			// pictureBoxPreview
+			// 
+			this.pictureBoxPreview.Location = new System.Drawing.Point(3, 109);
+			this.pictureBoxPreview.Name = "pictureBoxPreview";
+			this.pictureBoxPreview.Size = new System.Drawing.Size(362, 206);
+			this.pictureBoxPreview.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
+			// 
 			// buttonSave
 			// 
-			this.buttonSave.Location = new System.Drawing.Point(3, 421);
+			this.buttonSave.Location = new System.Drawing.Point(3, 377);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(362, 37);
 			this.buttonSave.TabIndex = 4;
 			this.buttonSave.Text = "Save Image";
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+			// 
+			// tagTextBoxImageText
+			// 
+			this.tagTextBoxImageText.Location = new System.Drawing.Point(3, 331);
+			this.tagTextBoxImageText.Name = "tagTextBoxImageText";
+			this.tagTextBoxImageText.SeparatorChar = ' ';
+			this.tagTextBoxImageText.Size = new System.Drawing.Size(362, 30);
+			this.tagTextBoxImageText.TabIndex = 5;
 			// 
 			// AddDocument
 			// 
@@ -117,9 +116,9 @@
 		private Wisej.Web.FlexLayoutPanel flexLayoutPanel1;
 		private Wisej.Web.Upload uploadImage;
 		private Wisej.Web.PictureBox pictureBoxPreview;
-		private Wisej.Web.TextBox textBoxImageText;
 		private Wisej.Ext.Tesseract.Tesseract tesseract1;
 		private Wisej.Web.Button buttonScan;
 		private Wisej.Web.Button buttonSave;
+		private Wisej.Web.TagTextBox tagTextBoxImageText;
 	}
 }

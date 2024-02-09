@@ -27,7 +27,7 @@ namespace HybridLocal.Views
 
 			var result = (await this.tesseract1.ScanImageAsync(this._image));
 
-			this.textBoxImageText.Text = result.Text;
+			this.tagTextBoxImageText.Text = result.Text;
 
 			Application.Update(this);
 		}
@@ -41,7 +41,7 @@ namespace HybridLocal.Views
 
 			var result = (await this.tesseract1.ScanImageAsync(this._image));
 
-			this.textBoxImageText.Text = result.Text;
+			this.tagTextBoxImageText.Text = result.Text;
 
 			Application.Update(this);
 		}
@@ -51,12 +51,14 @@ namespace HybridLocal.Views
 			if (!Directory.Exists(this.DocumentsDirectory))
 				Directory.CreateDirectory(this.DocumentsDirectory);
 
+			// save the image.
 			var time = DateTime.Now.Ticks;
 			var targetPath = Path.Combine(DocumentsDirectory, $"{time}.jpg");
 			this._image.Save(targetPath, ImageFormat.Jpeg);
-
+			
+			// save the related data.
 			var dataTargetPath = Path.ChangeExtension(targetPath, ".txt");
-			File.WriteAllText(dataTargetPath, this.textBoxImageText.Text);
+			File.WriteAllText(dataTargetPath, this.tagTextBoxImageText.Text);
 
 			AlertBox.Show("Saved");
 		}

@@ -25,7 +25,7 @@ namespace HybridLocal
 
 		public void SwitchView(Type type)
 		{
-			this.panel1.Controls.Clear();
+			this.Controls.Clear();
 
 			// create new instance of view.
 			var view = (ViewBase)Activator.CreateInstance(type);
@@ -37,7 +37,7 @@ namespace HybridLocal
 			view.Dock = DockStyle.Fill;
 
 			// add view to main page.
-			this.panel1.Controls.Add(view);
+			this.Controls.Add(view);
 		}
 
 		private void _navigationService_ViewRequested(object sender, Type e)

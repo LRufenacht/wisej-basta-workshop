@@ -28,22 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.panel1 = new Wisej.Web.Panel();
 			this.SuspendLayout();
-			// 
-			// panel1
-			// 
-			this.panel1.Dock = Wisej.Web.DockStyle.Fill;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1814, 928);
-			this.panel1.TabIndex = 0;
 			// 
 			// MainPage
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-			this.Controls.Add(this.panel1);
 			this.Name = "MainPage";
 			this.Size = new System.Drawing.Size(1814, 928);
 			this.Text = "Page1";
@@ -53,8 +43,6 @@
 		}
 
 		#endregion
-
-		private Wisej.Web.Panel panel1;
 	}
 }
 
