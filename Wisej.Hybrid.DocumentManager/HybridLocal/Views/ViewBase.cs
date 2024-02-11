@@ -3,12 +3,13 @@ using System.ComponentModel;
 using System.IO;
 using Wisej.Hybrid;
 using Wisej.Services;
+using Wisej.Web;
 
 namespace HybridLocal.Views
 {
 	public partial class ViewBase : Wisej.Web.UserControl
 	{
-		[Inject()]
+		[Inject]
 		internal NavigationService NavigationService { get; set; }
 
 		internal readonly string DocumentsDirectory;
@@ -17,7 +18,9 @@ namespace HybridLocal.Views
 		{
 			InitializeComponent();
 
-			if (LicenseManager.UsageMode == LicenseUsageMode.Runtime)
+			Application.Services.Inject(this);
+
+			if (Application.RuntimeMode)
 				this.DocumentsDirectory = Path.Combine(Device.Info.FileSystem.LocalApplicationData, "Documents");
 		}
 

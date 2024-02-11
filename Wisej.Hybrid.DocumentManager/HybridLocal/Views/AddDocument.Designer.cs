@@ -33,15 +33,17 @@
 			this.uploadImage = new Wisej.Web.Upload();
 			this.buttonScan = new Wisej.Web.Button();
 			this.pictureBoxPreview = new Wisej.Web.PictureBox();
+			this.tagTextBoxImageText = new Wisej.Web.TagTextBox();
 			this.buttonSave = new Wisej.Web.Button();
 			this.tesseract1 = new Wisej.Ext.Tesseract.Tesseract(this.components);
-			this.tagTextBoxImageText = new Wisej.Web.TagTextBox();
 			this.flexLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// flexLayoutPanel1
 			// 
+			this.flexLayoutPanel1.AutoScroll = true;
+			this.flexLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 20);
 			this.flexLayoutPanel1.Controls.Add(this.uploadImage);
 			this.flexLayoutPanel1.Controls.Add(this.buttonScan);
 			this.flexLayoutPanel1.Controls.Add(this.pictureBoxPreview);
@@ -80,6 +82,14 @@
 			this.pictureBoxPreview.Size = new System.Drawing.Size(362, 206);
 			this.pictureBoxPreview.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
+			// tagTextBoxImageText
+			// 
+			this.tagTextBoxImageText.Location = new System.Drawing.Point(3, 331);
+			this.tagTextBoxImageText.Name = "tagTextBoxImageText";
+			this.tagTextBoxImageText.SeparatorChar = ' ';
+			this.tagTextBoxImageText.Size = new System.Drawing.Size(362, 30);
+			this.tagTextBoxImageText.TabIndex = 5;
+			// 
 			// buttonSave
 			// 
 			this.buttonSave.Location = new System.Drawing.Point(3, 377);
@@ -89,13 +99,9 @@
 			this.buttonSave.Text = "Save Image";
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
-			// tagTextBoxImageText
+			// tesseract1
 			// 
-			this.tagTextBoxImageText.Location = new System.Drawing.Point(3, 331);
-			this.tagTextBoxImageText.Name = "tagTextBoxImageText";
-			this.tagTextBoxImageText.SeparatorChar = ' ';
-			this.tagTextBoxImageText.Size = new System.Drawing.Size(362, 30);
-			this.tagTextBoxImageText.TabIndex = 5;
+			this.tesseract1.MinimumConfidence = 60;
 			// 
 			// AddDocument
 			// 

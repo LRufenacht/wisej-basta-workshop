@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridClient", "HybridClien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridLocal", "HybridLocal\HybridLocal.csproj", "{FF09C50C-A322-4A8C-960B-A242999870E5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.Ext.Tesseract", "..\..\Wisej\Extensions\3.5\Wisej.Ext.Tesseract\Wisej.Ext.Tesseract.csproj", "{61D7AAAB-4CE2-4052-B12D-CA46C58387E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{FF09C50C-A322-4A8C-960B-A242999870E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF09C50C-A322-4A8C-960B-A242999870E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF09C50C-A322-4A8C-960B-A242999870E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D7AAAB-4CE2-4052-B12D-CA46C58387E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D7AAAB-4CE2-4052-B12D-CA46C58387E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D7AAAB-4CE2-4052-B12D-CA46C58387E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D7AAAB-4CE2-4052-B12D-CA46C58387E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

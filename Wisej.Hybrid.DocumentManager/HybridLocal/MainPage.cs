@@ -30,9 +30,6 @@ namespace HybridLocal
 			// create new instance of view.
 			var view = (ViewBase)Activator.CreateInstance(type);
 
-			// inject services into view.
-			Application.Services.Inject(view);
-
 			// fill view to full screen.
 			view.Dock = DockStyle.Fill;
 
